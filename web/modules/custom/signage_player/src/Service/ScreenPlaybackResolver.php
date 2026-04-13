@@ -109,6 +109,8 @@ class ScreenPlaybackResolver {
         'media_url' => $this->getSlideMediaUrl($slide),
         'duration' => $this->getIntegerField($paragraph, 'field_duration_seconds', 10),
         'order' => $this->getIntegerField($paragraph, 'field_sort_order', 1),
+        'start_at' => $paragraph->get('field_start_at')->value ?? null,
+        'end_at' => $paragraph->get('field_end_at')->value ?? null,
       ];
     }
 
