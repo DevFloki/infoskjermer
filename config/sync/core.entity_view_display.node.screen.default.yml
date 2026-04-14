@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.screen.field_screen_access_users
     - field.field.node.screen.field_screen_location
     - field.field.node.screen.field_screen_playlist
     - field.field.node.screen.field_screen_status
@@ -45,4 +46,5 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_screen_access_users: true

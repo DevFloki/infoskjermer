@@ -1,0 +1,29 @@
+uuid: ca0b45a5-294b-47ad-970f-ebc0fac54f79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_screen_access_users
+    - node.type.screen
+_core:
+  default_config_hash: fDyqw8kYbfBeoIfNCmeKhElsUOB3QwPZrMxyJFmX-rE
+id: node.screen.field_screen_access_users
+field_name: field_screen_access_users
+entity_type: node
+bundle: screen
+label: 'Allowed users'
+description: 'Users who have been explicitly granted access to this screen (managed via Screen Access Manager).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference
